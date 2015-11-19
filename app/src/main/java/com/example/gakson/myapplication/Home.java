@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +33,13 @@ public class Home extends Activity {
         final ListView DevListView = (ListView) findViewById(R.id.list);
         activity = this;
 
+        Toast.makeText(Home.this, "Hi Ahmed Maher", Toast.LENGTH_SHORT).show();
         DevDataModel Person_1 = new DevDataModel();
         Person_1.setPerson_Name("Ahmed");
         Person_1.setPerson_Photo(R.mipmap.ahmed);
         Person_1.setPerson_Desc("Android 1");
         person_Array.add(Person_1);
+
 
 
         DevDataModel person_2 =  new DevDataModel();
